@@ -2,3 +2,6 @@ add . - dovabqsh
 commit - fixirash promenite
 pull - teglish i sravnqvash
 push - kachvash na repo-to
+
+pipnah
+
