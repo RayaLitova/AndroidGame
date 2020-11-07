@@ -1,2 +1,0 @@
-# AndroidGame
-nqnqnqhoiuefhafklnskd
