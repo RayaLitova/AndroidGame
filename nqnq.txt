@@ -1,7 +1,7 @@
 add . - dovabqsh
-commit - fixirash promenite
+comit - fixirash promenite
 pull - teglish i sravnqvash
-push - kachvash na repo-to
+push - kachvassdfh na repo-to
 
-pipnah
+pinah
 
