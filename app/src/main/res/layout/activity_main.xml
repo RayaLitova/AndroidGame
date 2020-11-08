@@ -14,10 +14,10 @@
         style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="43dp"
         android:layout_height="45dp"
-        android:text="..."
-        android:textSize="12sp"
+        android:text=". . ."
+        android:textSize="8sp"
         android:visibility="visible"
-        app:backgroundTint="#FFC107"
+        app:backgroundTint="#FF9C07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
@@ -57,6 +57,7 @@
         android:text="Settings"
         android:textSize="18sp"
         android:visibility="gone"
+        app:backgroundTint="#FFEB3B"
         app:layout_constraintEnd_toEndOf="@+id/menu_wdgt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/store_btn"
@@ -74,6 +75,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settings_btn"
         tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/worker_house"
+        android:layout_width="69dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="2/5"
+        android:textSize="14sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <TextView
+        android:id="@+id/house_wdgt"
+        android:layout_width="579dp"
+        android:layout_height="273dp"
+        android:background="#C83F51B5"
+        android:text="Workers"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        tools:visibility="visible" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
