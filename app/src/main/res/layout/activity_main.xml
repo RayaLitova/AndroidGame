@@ -5,6 +5,7 @@
     android:id="@+id/menu_widget"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity"
     tools:visibility="gone">
 
@@ -75,3 +76,4 @@
         tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
