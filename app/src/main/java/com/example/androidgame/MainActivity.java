@@ -15,21 +15,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button menu_btn=(Button) findViewById(R.id.menu);
         Button shop_btn=(Button) findViewById(R.id.shop_btn);
         Button store_btn=(Button) findViewById(R.id.store_btn);
         Button settings_btn=(Button) findViewById(R.id.settings_btn);
-        TextView menu_wdgt=(TextView) findViewById(R.id.menu_wdgt);
-        menu_btn.setOnClickListener(new View.OnClickListener() {
+
+        findViewById(R.id.menu).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!menu_wdgt.isShown()) {
-                    menu_wdgt.setVisibility(View.VISIBLE);
+                if(!findViewById(R.id.menu_wdgt).isShown()) {
+                    findViewById(R.id.menu_wdgt).setVisibility(View.VISIBLE);
                     shop_btn.setVisibility(View.VISIBLE);
                     store_btn.setVisibility(View.VISIBLE);
                     settings_btn.setVisibility(View.VISIBLE);
                 }else{
-                    menu_wdgt.setVisibility(View.GONE);
+                    findViewById(R.id.menu_wdgt).setVisibility(View.GONE);
                     shop_btn.setVisibility(View.GONE);
                     store_btn.setVisibility(View.GONE);
                     settings_btn.setVisibility(View.GONE);
