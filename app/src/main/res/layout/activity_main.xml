@@ -80,8 +80,8 @@
         android:id="@+id/worker_house"
         android:layout_width="69dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="2/5"
         android:textSize="14sp"
         app:backgroundTint="#3F51B5"
@@ -92,19 +92,47 @@
 
     <TextView
         android:id="@+id/house_wdgt"
-        android:layout_width="579dp"
-        android:layout_height="273dp"
+        android:layout_width="581dp"
+        android:layout_height="256dp"
         android:background="#C83F51B5"
-        android:text="Workers"
+        android:text="  Workers"
         android:textColor="#000000"
         android:textSize="20sp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.456"
+        app:layout_constraintVertical_bias="0.428"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/workerBtn1"
+        android:layout_width="86dp"
+        android:layout_height="106dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/workerBtn2"
+        android:layout_width="85dp"
+        android:layout_height="107dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322"
+        tools:srcCompat="@tools:sample/avatars"
         tools:visibility="visible" />
 
 
