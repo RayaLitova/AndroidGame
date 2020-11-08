@@ -45,15 +45,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.menu).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!menu_wdgt.isShown()) {
-                    set_butt_vis_on(menu_btns);
-                    set_wdgt_vis_on(menu_Wdgts);
-                    set_wdgt_vis_off(house_Wdgts);
-                    set_imgbutt_vis_off(house_btns);
-                }else{
-                    set_butt_vis_off(menu_btns);
-                    set_wdgt_vis_off(menu_Wdgts);
+                change_btn_vis(menu_btns);
+                change_wdgt_vis(menu_Wdgts);
+                if(house_wdgt.isShown()){
+                    change_wdgt_vis(house_Wdgts);
+                    change_img_vis(house_btns);
                 }
+
             }
         });
 
@@ -61,47 +59,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (menu_wdgt.isShown()) {
-                    set_butt_vis_off(menu_btns);
-                    set_wdgt_vis_off(menu_Wdgts);
+                    change_btn_vis(menu_btns);
+                    change_wdgt_vis(menu_Wdgts);
                 }
-                if (!house_wdgt.isShown()) {
-                    set_wdgt_vis_on(house_Wdgts);
-                    set_imgbutt_vis_on(house_btns);
-                } else {
-                    set_wdgt_vis_off(house_Wdgts);
-                    set_imgbutt_vis_off(house_btns);
-                }
+                change_wdgt_vis(house_Wdgts);
+                change_img_vis(house_btns);
             }
         });
     }
-    private void set_butt_vis_on(Button[] args){
+    private void change_btn_vis(Button[] args){
         for(Button next:args){
-            next.setVisibility(View.VISIBLE);
+            next.setVisibility(next.isShown()? View.GONE : View.VISIBLE);
         }
     }
-    private void set_wdgt_vis_on(TextView[] args){
+    private void change_wdgt_vis(TextView[] args){
         for(TextView next:args){
-            next.setVisibility(View.VISIBLE);
+            next.setVisibility(next.isShown()? View.GONE : View.VISIBLE);
         }
     }
-    private void set_butt_vis_off(Button[] args){
-        for(Button next:args){
-            next.setVisibility(View.GONE);
-        }
-    }
-    private void set_wdgt_vis_off(TextView[] args){
-        for(TextView next:args){
-            next.setVisibility(View.GONE);
-        }
-    }
-    private void set_imgbutt_vis_on(ImageButton[] args){
+    private void change_img_vis(ImageButton[] args){
         for(ImageButton next:args){
-            next.setVisibility(View.VISIBLE);
-        }
-    }
-    private void set_imgbutt_vis_off(ImageButton[] args){
-        for(ImageButton next:args){
-            next.setVisibility(View.GONE);
+            next.setVisibility(next.isShown()? View.GONE : View.VISIBLE);
         }
     }
 
